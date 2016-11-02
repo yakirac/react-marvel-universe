@@ -7,6 +7,8 @@ import './assets/bootstrap/css/bootstrap.min.css';
 import './assets/bootstrap/js/bootstrap.min.js';
 import 'holderjs';
 
+import './assets/base.css';
+
 const rootEl = document.getElementById('app');
 
 ReactDOM.render(

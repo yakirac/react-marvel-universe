@@ -109,7 +109,7 @@ export default class App extends Component {
 	render() {
 	    var heros = heroData.map(function(hero) {
 	    	return (
-	    		<Character holderImage={hero.holderImage}></Character>
+	    		<Character key={hero.id.toString()} hero={hero}></Character>
 	    	);
 	    });
 	    return (

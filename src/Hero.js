@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class Character extends Component {
+export default class Hero extends Component {
 	constructor(props) {
 		super(props);
     this.state = {
@@ -9,15 +9,15 @@ export default class Character extends Component {
     };
 	}
 
-  showCharacterModal() {
-
+  showHeroModal() {
+    this.props.showHeroModal();
   }
 
   showHolderImage() {
     this.setState({ showHolder : true, showImage : false});
   }
 
-  showCharacterImage() {
+  showHeroImage() {
     this.setState({ showHolder : false, showImage : true});
   }
 
@@ -35,7 +35,7 @@ export default class Character extends Component {
     };
 
     return (
-      <div className="character csnippet col-xs-8 col-lg-3" onMouseEnter={() => {this.showCharacterImage()}} onMouseLeave={() => {this.showHolderImage()}}>
+      <div className="hero csnippet col-xs-8 col-lg-3" onMouseEnter={() => this.showHeroImage()} onMouseLeave={() => this.showHolderImage()} onClick={() => this.showHeroModal()}>
         <img src={this.props.hero.holderImage} style={holderImageStyle}/>
         <img src={this.props.hero.image} style={imageStyle}/>
       </div>

@@ -1,4 +1,37 @@
-.character {
+.hero {
 	padding-right: 0;
 	padding-left: 0;
+}
+
+.shield-data{
+	padding: 20px;
+}
+
+.shield-footer{
+	padding: 10px 10px 30px 0px;
+}
+
+.cmodal-alias, .cmodal-fullname{
+	padding-left: 20px;
+}
+
+.cmodal-alias{
+	color: #62BFA4;
+}
+
+.cmodal-fullname{
+	color: #5a5a5a;
+}
+
+.cmodal-close{
+	float: right;
+}
+
+.btn-success{
+	background-color: #62BFA4;
+	border-color: #62BFA4;
+}
+
+.btn-success:hover{
+	background-color: #5a5a5a;
 }

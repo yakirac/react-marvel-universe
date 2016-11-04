@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom';
 import App from './App';
 
 import './assets/bootstrap/css/bootstrap.min.css';
-import './assets/bootstrap/js/bootstrap.min.js';
 import 'holderjs';
 
 import './assets/base.css';

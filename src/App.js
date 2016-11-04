@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 //import Greeting from './Greeting';
-import Character from './Character';
+import Hero from './Hero';
+
+import HeroModal from './HeroModal';
 
 var heroData = [
     {
@@ -106,10 +108,27 @@ var heroData = [
 ];
 
 export default class App extends Component {
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			showModal : false,
+			hero : {}
+		};
+	}
+
+	showHeroModal(hero) {
+		this.setState({ showModal : true, hero : hero });
+	}
+
+	closeHeroModal() {
+		this.setState({ showModal : false, hero : {} });
+	}
+
 	render() {
-	    var heros = heroData.map(function(hero) {
+	    var heros = heroData.map((hero) => {
 	    	return (
-	    		<Character key={hero.id.toString()} hero={hero}></Character>
+	    		<Hero key={hero.id.toString()} hero={hero} showHeroModal={() => this.showHeroModal(hero)}></Hero>
 	    	);
 	    });
 	    return (
@@ -118,6 +137,7 @@ export default class App extends Component {
 	      	<div className="row">
 	      		{heros}
 	      	</div>
+	      	<HeroModal showModal={this.state.showModal} closeModal={() => this.closeHeroModal()} hero={this.state.hero}></HeroModal>
 	      </div>
 	    );
 	}

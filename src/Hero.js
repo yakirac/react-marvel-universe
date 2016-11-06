@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import Img from 'react-image-holder';
+
 export default class Hero extends Component {
 	constructor(props) {
 		super(props);
@@ -34,10 +36,12 @@ export default class Hero extends Component {
       display : this.state.showImage ? 'block' : 'none'
     };
 
+    var placeholder = this.props.hero.holderImage;
+
     return (
       <div className="hero csnippet col-xs-8 col-lg-3" onMouseEnter={() => this.showHeroImage()} onMouseLeave={() => this.showHolderImage()} onClick={() => this.showHeroModal()}>
-        <img src={this.props.hero.holderImage} style={holderImageStyle}/>
-        <img src={this.props.hero.image} style={imageStyle}/>
+        <Img src="" usePlaceholder={true} width={this.props.hero.holderImage.width} height={this.props.hero.holderImage.height} placeholder={placeholder} style={holderImageStyle}/>
+        <Img src={this.props.hero.image} style={imageStyle}/>
       </div>
     );
   }

@@ -34,9 +34,10 @@
 			app.use(WebpackHotMiddleware(compiler));
 		}
 		else {
-			console.log('Production');
-			app.use(express.static(path.join(__dirname, '../dist')));
+			console.log('Production');	
 		}
+		
+		app.use(express.static(path.join(__dirname, '../dist')));
 	}
 
 	/**

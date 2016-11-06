@@ -7,6 +7,16 @@
 	padding: 20px;
 }
 
+a.marvel-data {
+	color : #62bfa4;
+	padding: 20px;
+}
+
+a.marvel-data:hover {
+	color : #5a5a5a;
+	text-decoration: none;
+}
+
 .shield-footer{
 	padding: 10px 10px 30px 0px;
 }

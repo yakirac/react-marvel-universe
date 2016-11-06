@@ -6,8 +6,8 @@ export default class HeroService {
 
 	}
 
-	getHero() {
-
+	getHero(id) {
+		return http.get('/hero/' + id);
 	}
 
 	getHeros() {

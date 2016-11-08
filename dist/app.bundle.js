@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "4cea795e1b626e41f1a8"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "a41b543630c3cbd9af7b"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -59425,7 +59425,7 @@
 
 
 	// module
-	exports.push([module.id, ".hero {\n\tpadding-right: 0;\n\tpadding-left: 0;\n}\n\n.shield-data{\n\tpadding: 20px;\n}\n\na.marvel-data {\n\tcolor : #62bfa4;\n\tpadding: 20px;\n}\n\na.marvel-data:hover {\n\tcolor : #5a5a5a;\n\ttext-decoration: none;\n}\n\n.shield-footer{\n\tpadding: 10px 10px 30px 0px;\n}\n\n.cmodal-alias, .cmodal-fullname{\n\tpadding-left: 20px;\n}\n\n.cmodal-alias{\n\tcolor: #62BFA4;\n}\n\n.cmodal-fullname{\n\tcolor: #5a5a5a;\n}\n\n.cmodal-close{\n\tfloat: right;\n}\n\n.btn-success{\n\tbackground-color: #62BFA4;\n\tborder-color: #62BFA4;\n}\n\n.btn-success:hover{\n\tbackground-color: #5a5a5a;\n}", ""]);
+	exports.push([module.id, ".hero {\n\tpadding-right: 0;\n\tpadding-left: 0;\n}\n\n.hero:hover{\n\tcursor: pointer;\n}\n\n.shield-data{\n\tpadding: 20px;\n}\n\na.marvel-data {\n\tcolor : #62bfa4;\n\tpadding: 20px;\n}\n\na.marvel-data:hover {\n\tcolor : #5a5a5a;\n\ttext-decoration: none;\n}\n\n.shield-footer{\n\tpadding: 10px 10px 30px 0px;\n}\n\n.cmodal-alias, .cmodal-fullname{\n\tpadding-left: 20px;\n}\n\n.cmodal-alias{\n\tcolor: #62BFA4;\n}\n\n.cmodal-fullname{\n\tcolor: #5a5a5a;\n}\n\n.cmodal-close{\n\tfloat: right;\n}\n\n.btn-success{\n\tbackground-color: #62BFA4;\n\tborder-color: #62BFA4;\n}\n\n.btn-success:hover{\n\tbackground-color: #5a5a5a;\n}", ""]);
 
 	// exports
 

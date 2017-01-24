@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "a41b543630c3cbd9af7b"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "27ce6824ea610f9d348a"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -54434,12 +54434,12 @@
 		_createClass(HeroService, [{
 			key: 'getHero',
 			value: function getHero(id) {
-				return _axios2.default.get('/hero/' + id);
+				return _axios2.default.get('/react/hero/' + id);
 			}
 		}, {
 			key: 'getHeros',
 			value: function getHeros() {
-				return _axios2.default.get('/heros');
+				return _axios2.default.get('/react/heros');
 			}
 		}]);
 

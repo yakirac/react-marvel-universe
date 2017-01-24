@@ -21,6 +21,8 @@
 			var timeStamp = now.getTime();
 			var hash = md5(timeStamp+privateKey+publicKey);
 
+			console.log(timeStamp, privateKey, publicKey);
+
 			return request({
 				method : 'GET',
 				url : marvelApiUrl + 'characters/' + id + '?apikey=' + publicKey + '&ts=' + timeStamp + '&hash=' + hash

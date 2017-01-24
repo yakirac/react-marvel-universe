@@ -37,7 +37,7 @@
 			console.log('Production');	
 		}
 		
-		app.use(express.static(path.join(__dirname, '../dist')));
+		app.use('/react', express.static(path.join(__dirname, '../dist')));
 	}
 
 	/**

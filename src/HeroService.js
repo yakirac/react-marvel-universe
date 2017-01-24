@@ -7,11 +7,11 @@ export default class HeroService {
 	}
 
 	getHero(id) {
-		return http.get('/hero/' + id);
+		return http.get('/react/hero/' + id);
 	}
 
 	getHeros() {
-		return http.get('/heros');
+		return http.get('/react/heros');
 	}
 
 }

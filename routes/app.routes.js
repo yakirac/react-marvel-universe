@@ -11,19 +11,19 @@
 
 	function setAppRoutes(app)
 	{
-		app.route('/').get(function response(req, res) {  
+		app.route('/react').get(function response(req, res) {  
 		  res.sendFile(path.join(__dirname, '../dist/index.html'));
 		});
 
-		app.route('/test').get(function response(req, res) {  
+		app.route('/react/test').get(function response(req, res) {  
 		  res.sendFile(path.join(__dirname, '../dist/test.html'));
 		});
 
-		app.route('/heros').get(function response(req, res) {
+		app.route('/react/heros').get(function response(req, res) {
 			res.sendFile(path.join(__dirname, '../data/heros.json'));
 		});
 
-		app.route('/hero/:id').get(function response(req, res) {
+		app.route('/react/hero/:id').get(function response(req, res) {
 			mService.getCharacter(req.params.id).then(function(data) {
 				var character = JSON.parse(data);
 				res.json({ attributionText : character.attributionText, 

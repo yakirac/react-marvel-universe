@@ -10,7 +10,9 @@
 		// Initialize express
 		var app = express.init();
 		// Start up the server on the port specified in the config
-		app.listen(3200);
+		app.listen(3200, function() {
+			console.log('App started on port 3200');
+		});
 		module.exports = app;
 	}
 	startServer();
